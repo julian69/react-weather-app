@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Load from "pages/Load";
+import Weather from "pages/Weather";
+import NotFound from "pages/NotFound";
+import Header from "components/Header";
+import React, { useEffect } from "react";
+import Container from "@material-ui/core/Container";
+import { StatusType } from "redux/slices/weather";
+import useWeather from "hooks/useWeather";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
-function App() {
+const App: React.FC = () => {
+  const { status, getWeather } = useWeather();
+  const matches = useMediaQuery("(min-width:769px)");
+
+  useEffect(() => {
+    getWeather();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const renderContent = (): JSX.Element => {
+    const { PENDING, FULFILLED, REJECTED } = StatusType;
+
+    if (status === PENDING) return <Load />;
+    if (status === FULFILLED) return <Weather />;
+    if (status === REJECTED) return <NotFound />;
+
+    return <></>;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Container className="App" fixed style={{ paddingTop: matches ? 0 : 50 }}>
+        {renderContent()}
+      </Container>
+    </>
   );
-}
+};
 
 export default App;

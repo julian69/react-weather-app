@@ -1,28 +1,32 @@
-import React, { useEffect } from "react";
 import Load from "pages/Load";
 import Weather from "pages/Weather";
-import fetchWeather from "utils/services/weather";
-
-// import { RootState } from "redux/store/index";
-import { set } from "redux/slices/weatherSlice";
-import { useAppDispatch } from "hooks/";
+import NotFound from "pages/NotFound";
+import React, { useEffect } from "react";
+import { RootState } from "redux/store/index";
+import { useAppDispatch, useAppSelector } from "hooks/";
+import { fetchWeather, StatusType } from "redux/slices/weather";
 
 const App: React.FC = () => {
-  const [loading, setLoading] = React.useState(true);
-
-  // const list = useAppSelector((state: RootState) => state.weather.list);
   const dispatch = useAppDispatch();
+  const loadingStatus = useAppSelector(
+    (state: RootState) => state.weather.status
+  );
 
   useEffect(() => {
-    const getWeather = async () => {
-      const weather = await fetchWeather();
-      dispatch(set(weather?.list));
-      setLoading(false);
-    };
-    getWeather();
+    dispatch(fetchWeather());
   }, [dispatch]);
 
-  return <div className="App">{loading ? <Load /> : <Weather />}</div>;
+  const renderContent = (): JSX.Element | null => {
+    const { PENDING, FULFILLED, REJECTED } = StatusType;
+
+    if (loadingStatus === PENDING) return <Load />;
+    if (loadingStatus === FULFILLED) return <Weather />;
+    if (loadingStatus === REJECTED) return <NotFound />;
+
+    return null;
+  };
+
+  return <div className="App">{renderContent()}</div>;
 };
 
 export default App;

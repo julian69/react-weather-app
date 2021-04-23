@@ -1,7 +1,7 @@
 import React from "react";
 
-const Load: React.FC = () => {
+const Weather: React.FC = () => {
   return <h1>Weather</h1>;
 };
 
-export default Load;
+export default Weather;

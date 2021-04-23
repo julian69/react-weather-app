@@ -1,6 +1,6 @@
 import React from "react";
 import { screen } from "@testing-library/react";
-import { render } from "testRender";
+import { render } from "utils/testRender";
 import Load from "pages/Load";
 
 describe("<Load />", () => {

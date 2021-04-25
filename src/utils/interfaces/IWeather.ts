@@ -36,16 +36,16 @@ export interface Rain {
 }
 
 export interface List {
-  dt: number | null;
-  main: Main | null;
-  weather: Weather[] | null;
-  clouds: Clouds | null;
-  wind: Wind | null;
-  visibility: number | null;
-  pop: number | null;
-  sys: Sys | null;
-  dt_txt: string | null;
-  rain: Rain | null;
+  dt: number;
+  main: Main;
+  weather: Weather[];
+  clouds: Clouds;
+  wind: Wind;
+  visibility: number;
+  pop: number;
+  sys: Sys;
+  dt_txt: string;
+  rain?: Rain;
 }
 
 export interface Coord {

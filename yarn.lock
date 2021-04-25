@@ -1287,6 +1287,45 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
+"@devexpress/dx-chart-core@2.7.5":
+  version "2.7.5"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@devexpress/dx-chart-core/-/dx-chart-core-2.7.5.tgz#99a99fc085450874f2c888b34c4db93d238a39e5"
+  integrity sha1-mamfwIVFCHTyyIizTE25PSOKOeU=
+  dependencies:
+    d3-array "^2.4.0"
+    d3-scale "^3.2.0"
+    d3-shape "^1.3.7"
+
+"@devexpress/dx-core@2.7.5", "@devexpress/dx-core@^2.7.5":
+  version "2.7.5"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@devexpress/dx-core/-/dx-core-2.7.5.tgz#f1460c072f05765fdc97b836541240a10250738f"
+  integrity sha1-8UYMBy8Fdl/cl7g2VBJAoQJQc48=
+
+"@devexpress/dx-react-chart-material-ui@^2.7.5":
+  version "2.7.5"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@devexpress/dx-react-chart-material-ui/-/dx-react-chart-material-ui-2.7.5.tgz#3566956338330a0b284ff85afc320736523d1db8"
+  integrity sha1-NWaVYzgzCgsoT/ha/DIHNlI9Hbg=
+  dependencies:
+    clsx "^1.0.4"
+    prop-types "^15.7.2"
+
+"@devexpress/dx-react-chart@^2.7.5":
+  version "2.7.5"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@devexpress/dx-react-chart/-/dx-react-chart-2.7.5.tgz#0e9b999cb195e9b9b6734d9d0c3a5b5f8633b018"
+  integrity sha1-DpuZnLGV6bm2c02dDDpbX4YzsBg=
+  dependencies:
+    "@devexpress/dx-chart-core" "2.7.5"
+    d3-scale "^3.2.0"
+    d3-shape "^1.3.7"
+
+"@devexpress/dx-react-core@^2.7.5":
+  version "2.7.5"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@devexpress/dx-react-core/-/dx-react-core-2.7.5.tgz#978f1ead810819e9f3464e9f9d25ccbb87eaad96"
+  integrity sha1-l48erYEIGenzRk6fnSXMu4fqrZY=
+  dependencies:
+    "@devexpress/dx-core" "2.7.5"
+    prop-types "^15.7.2"
+
 "@emotion/hash@^0.8.0":
   version "0.8.0"
   resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
@@ -1559,6 +1598,13 @@
     prop-types "^15.7.2"
     react-is "^16.8.0 || ^17.0.0"
     react-transition-group "^4.4.0"
+
+"@material-ui/icons@^4.11.2":
+  version "4.11.2"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@material-ui/icons/-/icons-4.11.2.tgz#b3a7353266519cd743b6461ae9fdfcb1b25eb4c5"
+  integrity sha1-s6c1MmZRnNdDtkYa6f38sbJetMU=
+  dependencies:
+    "@babel/runtime" "^7.4.4"
 
 "@material-ui/styles@^4.11.3":
   version "4.11.3"
@@ -1979,6 +2025,11 @@
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
+"@types/lodash@^4.14.168":
+  version "4.14.168"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@types/lodash/-/lodash-4.14.168.tgz#fe24632e79b7ade3f132891afff86caa5e5ce008"
+  integrity sha1-/iRjLnm3rePxMoka//hsql5c4Ag=
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -2047,6 +2098,15 @@
   version "17.0.3"
   resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
   integrity sha1-um4hU2hQGsOCaVHu8pBFdMJizHk=
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^16.8.12":
+  version "16.14.5"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/@types/react/-/react-16.14.5.tgz#2c39b5cadefaf4829818f9219e5e093325979f4d"
+  integrity sha1-LDm1yt769IKYGPkhnl4JMyWXn00=
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2811,6 +2871,13 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
+auto-bind@^2.1.1:
+  version "2.1.1"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/auto-bind/-/auto-bind-2.1.1.tgz#8ae509671ecdfbd5009fc99b0f19ae9c3a2abf50"
+  integrity sha1-iuUJZx7N+9UAn8mbDxmunDoqv1A=
+  dependencies:
+    "@types/react" "^16.8.12"
+
 autoprefixer@^9.6.1:
   version "9.8.6"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.8.6.tgz#3b73594ca1bf9266320c5acf1588d74dea74210f"
@@ -2838,13 +2905,6 @@ axe-core@^4.0.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.1.2.tgz#7cf783331320098bfbef620df3b3c770147bc224"
   integrity sha512-V+Nq70NxKhYt89ArVcaNL9FDryB3vQOd+BFXZIfO3RP6rwtj+2yqqqdHEkacutglPaZLkJeuXKCjCJDMGPtPqg==
-
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=
-  dependencies:
-    follow-redirects "^1.10.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -3567,6 +3627,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.3.1:
+  version "2.3.1"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha1-38+jiR4wbsHa0QXQ6I9EF7hTXo4=
+
 clean-css@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
@@ -4205,6 +4270,67 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
+d3-array@2, d3-array@^2.3.0, d3-array@^2.4.0:
+  version "2.12.1"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-array/-/d3-array-2.12.1.tgz#e20b41aafcdffdf5d50928004ececf815a465e81"
+  integrity sha1-4gtBqvzf/fXVCSgATs7PgVpGXoE=
+  dependencies:
+    internmap "^1.0.0"
+
+"d3-color@1 - 2":
+  version "2.0.0"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-color/-/d3-color-2.0.0.tgz#8d625cab42ed9b8f601a1760a389f7ea9189d62e"
+  integrity sha1-jWJcq0Ltm49gGhdgo4n36pGJ1i4=
+
+"d3-format@1 - 2":
+  version "2.0.0"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-format/-/d3-format-2.0.0.tgz#a10bcc0f986c372b729ba447382413aabf5b0767"
+  integrity sha1-oQvMD5hsNytym6RHOCQTqr9bB2c=
+
+"d3-interpolate@1.2.0 - 2":
+  version "2.0.1"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-interpolate/-/d3-interpolate-2.0.1.tgz#98be499cfb8a3b94d4ff616900501a64abc91163"
+  integrity sha1-mL5JnPuKO5TU/2FpAFAaZKvJEWM=
+  dependencies:
+    d3-color "1 - 2"
+
+d3-path@1:
+  version "1.0.9"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-path/-/d3-path-1.0.9.tgz#48c050bb1fe8c262493a8caf5524e3e9591701cf"
+  integrity sha1-SMBQux/owmJJOoyvVSTj6VkXAc8=
+
+d3-scale@^3.2.0:
+  version "3.3.0"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-scale/-/d3-scale-3.3.0.tgz#28c600b29f47e5b9cd2df9749c206727966203f3"
+  integrity sha1-KMYAsp9H5bnNLfl0nCBnJ5ZiA/M=
+  dependencies:
+    d3-array "^2.3.0"
+    d3-format "1 - 2"
+    d3-interpolate "1.2.0 - 2"
+    d3-time "^2.1.1"
+    d3-time-format "2 - 3"
+
+d3-shape@^1.3.7:
+  version "1.3.7"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-shape/-/d3-shape-1.3.7.tgz#df63801be07bc986bc54f63789b4fe502992b5d7"
+  integrity sha1-32OAG+B7yYa8VPY3ibT+UCmStdc=
+  dependencies:
+    d3-path "1"
+
+"d3-time-format@2 - 3":
+  version "3.0.0"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-time-format/-/d3-time-format-3.0.0.tgz#df8056c83659e01f20ac5da5fdeae7c08d5f1bb6"
+  integrity sha1-34BWyDZZ4B8grF2l/ernwI1fG7Y=
+  dependencies:
+    d3-time "1 - 2"
+
+"d3-time@1 - 2", d3-time@^2.1.1:
+  version "2.1.1"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/d3-time/-/d3-time-2.1.1.tgz#e9d8a8a88691f4548e68ca085e5ff956724a6682"
+  integrity sha1-6dioqIaR9FSOaMoIXl/5VnJKZoI=
+  dependencies:
+    d3-array "2"
+
 d@1, d@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.1.tgz#8698095372d58dbee346ffd0c7093f99f8f9eb5a"
@@ -4233,6 +4359,11 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
+
+dayjs@^1.10.4:
+  version "1.10.4"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/dayjs/-/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
+  integrity sha1-jlRKm4aD9heD9XCYCoqA6vVKseI=
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
@@ -5529,11 +5660,6 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.2.tgz#dd73c8effc12728ba5cf4259d760ea5fb83e3147"
   integrity sha512-6mPTgLxYm3r6Bkkg0vNM0HTjfGrOEtsfbhagQvbxDEsEkpNhw582upBaoRZylzen6krEmxXJgt9Ju6HiI4O7BA==
 
-follow-redirects@^1.10.0:
-  version "1.13.3"
-  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/follow-redirects/-/follow-redirects-1.13.3.tgz#e5598ad50174c1bc4e872301e82ac2cd97f90267"
-  integrity sha1-5VmK1QF0wbxOhyMB6CrCzZf5Amc=
-
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -6324,6 +6450,11 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
+
+internmap@^1.0.0:
+  version "1.0.1"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/internmap/-/internmap-1.0.1.tgz#0017cc8a3b99605f0302f2b198d272e015e5df95"
+  integrity sha1-ABfMijuZYF8DAvKxmNJy4BXl35U=
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -9680,6 +9811,14 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-material-ui-carousel@^2.2.4:
+  version "2.2.4"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/react-material-ui-carousel/-/react-material-ui-carousel-2.2.4.tgz#874c5571482291b0a562f38918a7639edefc8a09"
+  integrity sha1-h0xVcUgikbClYvOJGKdjnt78igk=
+  dependencies:
+    auto-bind "^2.1.1"
+    react-swipeable "^5.5.1"
+
 react-redux@^7.2.3:
   version "7.2.3"
   resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/react-redux/-/react-redux-7.2.3.tgz#4c084618600bb199012687da9e42123cca3f0be9"
@@ -9762,6 +9901,13 @@ react-scripts@4.0.3:
     workbox-webpack-plugin "5.1.4"
   optionalDependencies:
     fsevents "^2.1.3"
+
+react-swipeable@^5.5.1:
+  version "5.5.1"
+  resolved "https://artifactory.jfrog.io/artifactory/api/npm/propellerhead-npm/react-swipeable/-/react-swipeable-5.5.1.tgz#48ae6182deaf62f21d4b87469b60281dbd7c4a76"
+  integrity sha1-SK5hgt6vYvIdS4dGm2AoHb18SnY=
+  dependencies:
+    prop-types "^15.6.2"
 
 react-transition-group@^4.4.0:
   version "4.4.1"

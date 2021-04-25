@@ -1,32 +1,38 @@
 import Load from "pages/Load";
 import Weather from "pages/Weather";
 import NotFound from "pages/NotFound";
+import Header from "components/Header";
 import React, { useEffect } from "react";
-import { RootState } from "redux/store/index";
-import { useAppDispatch, useAppSelector } from "hooks/";
-import { fetchWeather, StatusType } from "redux/slices/weather";
+import Container from "@material-ui/core/Container";
+import { StatusType } from "redux/slices/weather";
+import useWeather from "hooks/useWeather";
 
 const App: React.FC = () => {
-  const dispatch = useAppDispatch();
-  const loadingStatus = useAppSelector(
-    (state: RootState) => state.weather.status
-  );
+  const { status, getWeather } = useWeather();
 
   useEffect(() => {
-    dispatch(fetchWeather());
-  }, [dispatch]);
+    getWeather();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  const renderContent = (): JSX.Element | null => {
+  const renderContent = (): JSX.Element => {
     const { PENDING, FULFILLED, REJECTED } = StatusType;
 
-    if (loadingStatus === PENDING) return <Load />;
-    if (loadingStatus === FULFILLED) return <Weather />;
-    if (loadingStatus === REJECTED) return <NotFound />;
+    if (status === PENDING) return <Load />;
+    if (status === FULFILLED) return <Weather />;
+    if (status === REJECTED) return <NotFound />;
 
-    return null;
+    return <></>;
   };
 
-  return <div className="App">{renderContent()}</div>;
+  return (
+    <>
+      <Header />
+      <Container className="App" fixed>
+        {renderContent()}
+      </Container>
+    </>
+  );
 };
 
 export default App;

@@ -8,10 +8,14 @@ export enum StatusType {
 
 export interface WeatherState {
   status: StatusType;
-  list: List[];
+  city: string;
+  activeCard: List | null;
+  weatherByDays: List[][];
 }
 
 export const initialState: WeatherState = {
   status: StatusType.PENDING,
-  list: [],
+  city: "",
+  activeCard: null,
+  weatherByDays: [],
 };

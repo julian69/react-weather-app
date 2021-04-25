@@ -1,8 +1,8 @@
 /* eslint-disable no-param-reassign */
-import { List } from "utils/interfaces/IWeather";
-import type { RootState } from "redux/store";
 import fetchWeatherData from "utils/api/weather";
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { getWeatherByDays } from "utils/helpers";
+import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { List } from "utils/interfaces/IWeather";
 import { initialState, StatusType } from "./constants";
 
 export const fetchWeather = createAsyncThunk("weather/fetchWeather", async () =>
@@ -13,27 +13,28 @@ export const weatherSlice = createSlice({
   name: "weather",
   initialState,
   reducers: {
-    // set: (state, action: PayloadAction<List[]>) => {
-    //   state.list = action.payload;
-    // },
+    setActiveCard: (state, action: PayloadAction<List>) => {
+      state.activeCard = action.payload;
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchWeather.pending, (state) => {
       state.status = StatusType.PENDING;
     });
     builder.addCase(fetchWeather.fulfilled, (state, action) => {
-      state.list = action.payload?.list;
+      const weatherByDays = getWeatherByDays(action.payload?.list);
+
+      state.city = action.payload?.city.name;
+      state.weatherByDays = weatherByDays;
       state.status = StatusType.FULFILLED;
     });
     builder.addCase(fetchWeather.rejected, (state) => {
-      state.list = [];
+      state.city = "";
+      state.weatherByDays = [];
       state.status = StatusType.REJECTED;
     });
   },
 });
 
-export const selectWeather = (state: RootState): List[] => state.weather.list;
-export const selectLoadingStatus = (state: RootState): StatusType =>
-  state.weather.status;
-
+export const { setActiveCard } = weatherSlice.actions;
 export default weatherSlice.reducer;

@@ -1,8 +1,5 @@
-export const listFull = {
-  cod: "200",
-  message: 0,
-  cnt: 40,
-  list: [
+export default [
+  [
     {
       dt: 1619168400,
       main: {
@@ -17,26 +14,13 @@ export const listFull = {
         temp_kf: -0.96,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01d",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01d" },
       ],
-      clouds: {
-        all: 0,
-      },
-      wind: {
-        speed: 1.25,
-        deg: 3,
-        gust: 1.34,
-      },
+      clouds: { all: 0 },
+      wind: { speed: 1.25, deg: 3, gust: 1.34 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-23 09:00:00",
     },
     {
@@ -53,26 +37,13 @@ export const listFull = {
         temp_kf: -2.31,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01d",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01d" },
       ],
-      clouds: {
-        all: 0,
-      },
-      wind: {
-        speed: 2.57,
-        deg: 7,
-        gust: 2.32,
-      },
+      clouds: { all: 0 },
+      wind: { speed: 2.57, deg: 7, gust: 2.32 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-23 12:00:00",
     },
     {
@@ -89,26 +60,13 @@ export const listFull = {
         temp_kf: -1.23,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01d",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01d" },
       ],
-      clouds: {
-        all: 0,
-      },
-      wind: {
-        speed: 2.83,
-        deg: 22,
-        gust: 2.34,
-      },
+      clouds: { all: 0 },
+      wind: { speed: 2.83, deg: 22, gust: 2.34 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-23 15:00:00",
     },
     {
@@ -125,26 +83,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01d",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01d" },
       ],
-      clouds: {
-        all: 0,
-      },
-      wind: {
-        speed: 1.68,
-        deg: 69,
-        gust: 2.27,
-      },
+      clouds: { all: 0 },
+      wind: { speed: 1.68, deg: 69, gust: 2.27 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-23 18:00:00",
     },
     {
@@ -161,28 +106,17 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01n",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01n" },
       ],
-      clouds: {
-        all: 0,
-      },
-      wind: {
-        speed: 1.16,
-        deg: 87,
-        gust: 1.29,
-      },
+      clouds: { all: 0 },
+      wind: { speed: 1.16, deg: 87, gust: 1.29 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-23 21:00:00",
     },
+  ],
+  [
     {
       dt: 1619222400,
       main: {
@@ -197,26 +131,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01n",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01n" },
       ],
-      clouds: {
-        all: 2,
-      },
-      wind: {
-        speed: 0.85,
-        deg: 118,
-        gust: 1.02,
-      },
+      clouds: { all: 2 },
+      wind: { speed: 0.85, deg: 118, gust: 1.02 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-24 00:00:00",
     },
     {
@@ -233,26 +154,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 801,
-          main: "Clouds",
-          description: "few clouds",
-          icon: "02n",
-        },
+        { id: 801, main: "Clouds", description: "few clouds", icon: "02n" },
       ],
-      clouds: {
-        all: 11,
-      },
-      wind: {
-        speed: 0.98,
-        deg: 149,
-        gust: 1.06,
-      },
+      clouds: { all: 11 },
+      wind: { speed: 0.98, deg: 149, gust: 1.06 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-24 03:00:00",
     },
     {
@@ -269,26 +177,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 801,
-          main: "Clouds",
-          description: "few clouds",
-          icon: "02d",
-        },
+        { id: 801, main: "Clouds", description: "few clouds", icon: "02d" },
       ],
-      clouds: {
-        all: 13,
-      },
-      wind: {
-        speed: 0.91,
-        deg: 105,
-        gust: 1.45,
-      },
+      clouds: { all: 13 },
+      wind: { speed: 0.91, deg: 105, gust: 1.45 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-24 06:00:00",
     },
     {
@@ -312,19 +207,11 @@ export const listFull = {
           icon: "03d",
         },
       ],
-      clouds: {
-        all: 29,
-      },
-      wind: {
-        speed: 2.12,
-        deg: 52,
-        gust: 1.94,
-      },
+      clouds: { all: 29 },
+      wind: { speed: 2.12, deg: 52, gust: 1.94 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-24 09:00:00",
     },
     {
@@ -348,19 +235,11 @@ export const listFull = {
           icon: "03d",
         },
       ],
-      clouds: {
-        all: 25,
-      },
-      wind: {
-        speed: 2.27,
-        deg: 30,
-        gust: 1.62,
-      },
+      clouds: { all: 25 },
+      wind: { speed: 2.27, deg: 30, gust: 1.62 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-24 12:00:00",
     },
     {
@@ -377,26 +256,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 801,
-          main: "Clouds",
-          description: "few clouds",
-          icon: "02d",
-        },
+        { id: 801, main: "Clouds", description: "few clouds", icon: "02d" },
       ],
-      clouds: {
-        all: 16,
-      },
-      wind: {
-        speed: 2.74,
-        deg: 15,
-        gust: 2.38,
-      },
+      clouds: { all: 16 },
+      wind: { speed: 2.74, deg: 15, gust: 2.38 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-24 15:00:00",
     },
     {
@@ -413,26 +279,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 803,
-          main: "Clouds",
-          description: "broken clouds",
-          icon: "04d",
-        },
+        { id: 803, main: "Clouds", description: "broken clouds", icon: "04d" },
       ],
-      clouds: {
-        all: 54,
-      },
-      wind: {
-        speed: 1.84,
-        deg: 34,
-        gust: 2.47,
-      },
+      clouds: { all: 54 },
+      wind: { speed: 1.84, deg: 34, gust: 2.47 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-24 18:00:00",
     },
     {
@@ -449,28 +302,17 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 803,
-          main: "Clouds",
-          description: "broken clouds",
-          icon: "04n",
-        },
+        { id: 803, main: "Clouds", description: "broken clouds", icon: "04n" },
       ],
-      clouds: {
-        all: 59,
-      },
-      wind: {
-        speed: 0.71,
-        deg: 351,
-        gust: 0.88,
-      },
+      clouds: { all: 59 },
+      wind: { speed: 0.71, deg: 351, gust: 0.88 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-24 21:00:00",
     },
+  ],
+  [
     {
       dt: 1619308800,
       main: {
@@ -485,26 +327,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 803,
-          main: "Clouds",
-          description: "broken clouds",
-          icon: "04n",
-        },
+        { id: 803, main: "Clouds", description: "broken clouds", icon: "04n" },
       ],
-      clouds: {
-        all: 69,
-      },
-      wind: {
-        speed: 1.03,
-        deg: 338,
-        gust: 1.24,
-      },
+      clouds: { all: 69 },
+      wind: { speed: 1.03, deg: 338, gust: 1.24 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-25 00:00:00",
     },
     {
@@ -521,26 +350,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 803,
-          main: "Clouds",
-          description: "broken clouds",
-          icon: "04n",
-        },
+        { id: 803, main: "Clouds", description: "broken clouds", icon: "04n" },
       ],
-      clouds: {
-        all: 82,
-      },
-      wind: {
-        speed: 0.9,
-        deg: 353,
-        gust: 1.18,
-      },
+      clouds: { all: 82 },
+      wind: { speed: 0.9, deg: 353, gust: 1.18 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-25 03:00:00",
     },
     {
@@ -557,26 +373,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 803,
-          main: "Clouds",
-          description: "broken clouds",
-          icon: "04d",
-        },
+        { id: 803, main: "Clouds", description: "broken clouds", icon: "04d" },
       ],
-      clouds: {
-        all: 82,
-      },
-      wind: {
-        speed: 1.23,
-        deg: 358,
-        gust: 1.64,
-      },
+      clouds: { all: 82 },
+      wind: { speed: 1.23, deg: 358, gust: 1.64 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-25 06:00:00",
     },
     {
@@ -593,26 +396,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 801,
-          main: "Clouds",
-          description: "few clouds",
-          icon: "02d",
-        },
+        { id: 801, main: "Clouds", description: "few clouds", icon: "02d" },
       ],
-      clouds: {
-        all: 18,
-      },
-      wind: {
-        speed: 2.6,
-        deg: 23,
-        gust: 2.53,
-      },
+      clouds: { all: 18 },
+      wind: { speed: 2.6, deg: 23, gust: 2.53 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-25 09:00:00",
     },
     {
@@ -629,26 +419,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 801,
-          main: "Clouds",
-          description: "few clouds",
-          icon: "02d",
-        },
+        { id: 801, main: "Clouds", description: "few clouds", icon: "02d" },
       ],
-      clouds: {
-        all: 12,
-      },
-      wind: {
-        speed: 3.03,
-        deg: 25,
-        gust: 2.44,
-      },
+      clouds: { all: 12 },
+      wind: { speed: 3.03, deg: 25, gust: 2.44 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-25 12:00:00",
     },
     {
@@ -665,26 +442,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01d",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01d" },
       ],
-      clouds: {
-        all: 7,
-      },
-      wind: {
-        speed: 3.55,
-        deg: 34,
-        gust: 3.06,
-      },
+      clouds: { all: 7 },
+      wind: { speed: 3.55, deg: 34, gust: 3.06 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-25 15:00:00",
     },
     {
@@ -701,26 +465,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01d",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01d" },
       ],
-      clouds: {
-        all: 5,
-      },
-      wind: {
-        speed: 3.01,
-        deg: 68,
-        gust: 7.07,
-      },
+      clouds: { all: 5 },
+      wind: { speed: 3.01, deg: 68, gust: 7.07 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-25 18:00:00",
     },
     {
@@ -737,28 +488,17 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01n",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01n" },
       ],
-      clouds: {
-        all: 1,
-      },
-      wind: {
-        speed: 2.11,
-        deg: 91,
-        gust: 3.74,
-      },
+      clouds: { all: 1 },
+      wind: { speed: 2.11, deg: 91, gust: 3.74 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-25 21:00:00",
     },
+  ],
+  [
     {
       dt: 1619395200,
       main: {
@@ -773,26 +513,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01n",
-        },
+        { id: 800, main: "Clear", description: "clear sky", icon: "01n" },
       ],
-      clouds: {
-        all: 10,
-      },
-      wind: {
-        speed: 2.36,
-        deg: 84,
-        gust: 5.23,
-      },
+      clouds: { all: 10 },
+      wind: { speed: 2.36, deg: 84, gust: 5.23 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-26 00:00:00",
     },
     {
@@ -816,19 +543,11 @@ export const listFull = {
           icon: "03n",
         },
       ],
-      clouds: {
-        all: 34,
-      },
-      wind: {
-        speed: 1.81,
-        deg: 85,
-        gust: 2.97,
-      },
+      clouds: { all: 34 },
+      wind: { speed: 1.81, deg: 85, gust: 2.97 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-26 03:00:00",
     },
     {
@@ -852,19 +571,11 @@ export const listFull = {
           icon: "03d",
         },
       ],
-      clouds: {
-        all: 30,
-      },
-      wind: {
-        speed: 2.01,
-        deg: 90,
-        gust: 3.64,
-      },
+      clouds: { all: 30 },
+      wind: { speed: 2.01, deg: 90, gust: 3.64 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-26 06:00:00",
     },
     {
@@ -888,19 +599,11 @@ export const listFull = {
           icon: "03d",
         },
       ],
-      clouds: {
-        all: 39,
-      },
-      wind: {
-        speed: 3.22,
-        deg: 64,
-        gust: 3.66,
-      },
+      clouds: { all: 39 },
+      wind: { speed: 3.22, deg: 64, gust: 3.66 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-26 09:00:00",
     },
     {
@@ -924,19 +627,11 @@ export const listFull = {
           icon: "03d",
         },
       ],
-      clouds: {
-        all: 39,
-      },
-      wind: {
-        speed: 3.55,
-        deg: 55,
-        gust: 3.05,
-      },
+      clouds: { all: 39 },
+      wind: { speed: 3.55, deg: 55, gust: 3.05 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-26 12:00:00",
     },
     {
@@ -960,19 +655,11 @@ export const listFull = {
           icon: "03d",
         },
       ],
-      clouds: {
-        all: 45,
-      },
-      wind: {
-        speed: 3.77,
-        deg: 58,
-        gust: 3.74,
-      },
+      clouds: { all: 45 },
+      wind: { speed: 3.77, deg: 58, gust: 3.74 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-26 15:00:00",
     },
     {
@@ -989,26 +676,13 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 803,
-          main: "Clouds",
-          description: "broken clouds",
-          icon: "04d",
-        },
+        { id: 803, main: "Clouds", description: "broken clouds", icon: "04d" },
       ],
-      clouds: {
-        all: 72,
-      },
-      wind: {
-        speed: 3.35,
-        deg: 72,
-        gust: 7.87,
-      },
+      clouds: { all: 72 },
+      wind: { speed: 3.35, deg: 72, gust: 7.87 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-26 18:00:00",
     },
     {
@@ -1032,21 +706,15 @@ export const listFull = {
           icon: "04n",
         },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 3.73,
-        deg: 82,
-        gust: 11.27,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 3.73, deg: 82, gust: 11.27 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-26 21:00:00",
     },
+  ],
+  [
     {
       dt: 1619481600,
       main: {
@@ -1068,19 +736,11 @@ export const listFull = {
           icon: "04n",
         },
       ],
-      clouds: {
-        all: 98,
-      },
-      wind: {
-        speed: 4.55,
-        deg: 83,
-        gust: 11.76,
-      },
+      clouds: { all: 98 },
+      wind: { speed: 4.55, deg: 83, gust: 11.76 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-27 00:00:00",
     },
     {
@@ -1104,19 +764,11 @@ export const listFull = {
           icon: "04n",
         },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 3.16,
-        deg: 82,
-        gust: 8.19,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 3.16, deg: 82, gust: 8.19 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "n",
-      },
+      sys: { pod: "n" },
       dt_txt: "2021-04-27 03:00:00",
     },
     {
@@ -1140,19 +792,11 @@ export const listFull = {
           icon: "04d",
         },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 1.31,
-        deg: 97,
-        gust: 2.81,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 1.31, deg: 97, gust: 2.81 },
       visibility: 10000,
       pop: 0,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-27 06:00:00",
     },
     {
@@ -1176,19 +820,11 @@ export const listFull = {
           icon: "04d",
         },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 2.55,
-        deg: 267,
-        gust: 4.61,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 2.55, deg: 267, gust: 4.61 },
       visibility: 10000,
       pop: 0.12,
-      sys: {
-        pod: "d",
-      },
+      sys: { pod: "d" },
       dt_txt: "2021-04-27 09:00:00",
     },
     {
@@ -1205,29 +841,14 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 500,
-          main: "Rain",
-          description: "light rain",
-          icon: "10d",
-        },
+        { id: 500, main: "Rain", description: "light rain", icon: "10d" },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 1.56,
-        deg: 269,
-        gust: 2.51,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 1.56, deg: 269, gust: 2.51 },
       visibility: 10000,
       pop: 0.38,
-      rain: {
-        "3h": 0.35,
-      },
-      sys: {
-        pod: "d",
-      },
+      rain: { "3h": 0.35 },
+      sys: { pod: "d" },
       dt_txt: "2021-04-27 12:00:00",
     },
     {
@@ -1244,29 +865,14 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 500,
-          main: "Rain",
-          description: "light rain",
-          icon: "10d",
-        },
+        { id: 500, main: "Rain", description: "light rain", icon: "10d" },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 1.6,
-        deg: 260,
-        gust: 3.15,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 1.6, deg: 260, gust: 3.15 },
       visibility: 10000,
       pop: 0.65,
-      rain: {
-        "3h": 0.76,
-      },
-      sys: {
-        pod: "d",
-      },
+      rain: { "3h": 0.76 },
+      sys: { pod: "d" },
       dt_txt: "2021-04-27 15:00:00",
     },
     {
@@ -1283,29 +889,14 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 500,
-          main: "Rain",
-          description: "light rain",
-          icon: "10d",
-        },
+        { id: 500, main: "Rain", description: "light rain", icon: "10d" },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 2.67,
-        deg: 264,
-        gust: 6.01,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 2.67, deg: 264, gust: 6.01 },
       visibility: 10000,
       pop: 0.84,
-      rain: {
-        "3h": 1.03,
-      },
-      sys: {
-        pod: "d",
-      },
+      rain: { "3h": 1.03 },
+      sys: { pod: "d" },
       dt_txt: "2021-04-27 18:00:00",
     },
     {
@@ -1322,31 +913,18 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 500,
-          main: "Rain",
-          description: "light rain",
-          icon: "10n",
-        },
+        { id: 500, main: "Rain", description: "light rain", icon: "10n" },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 1.58,
-        deg: 265,
-        gust: 3.6,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 1.58, deg: 265, gust: 3.6 },
       visibility: 10000,
       pop: 0.69,
-      rain: {
-        "3h": 1.6,
-      },
-      sys: {
-        pod: "n",
-      },
+      rain: { "3h": 1.6 },
+      sys: { pod: "n" },
       dt_txt: "2021-04-27 21:00:00",
     },
+  ],
+  [
     {
       dt: 1619568000,
       main: {
@@ -1361,29 +939,14 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 500,
-          main: "Rain",
-          description: "light rain",
-          icon: "10n",
-        },
+        { id: 500, main: "Rain", description: "light rain", icon: "10n" },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 1.34,
-        deg: 306,
-        gust: 2.33,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 1.34, deg: 306, gust: 2.33 },
       visibility: 10000,
       pop: 0.59,
-      rain: {
-        "3h": 0.13,
-      },
-      sys: {
-        pod: "n",
-      },
+      rain: { "3h": 0.13 },
+      sys: { pod: "n" },
       dt_txt: "2021-04-28 00:00:00",
     },
     {
@@ -1400,29 +963,14 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 500,
-          main: "Rain",
-          description: "light rain",
-          icon: "10n",
-        },
+        { id: 500, main: "Rain", description: "light rain", icon: "10n" },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 2.01,
-        deg: 303,
-        gust: 5.59,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 2.01, deg: 303, gust: 5.59 },
       visibility: 4191,
       pop: 0.7,
-      rain: {
-        "3h": 1.77,
-      },
-      sys: {
-        pod: "n",
-      },
+      rain: { "3h": 1.77 },
+      sys: { pod: "n" },
       dt_txt: "2021-04-28 03:00:00",
     },
     {
@@ -1439,100 +987,15 @@ export const listFull = {
         temp_kf: 0,
       },
       weather: [
-        {
-          id: 501,
-          main: "Rain",
-          description: "moderate rain",
-          icon: "10d",
-        },
+        { id: 501, main: "Rain", description: "moderate rain", icon: "10d" },
       ],
-      clouds: {
-        all: 100,
-      },
-      wind: {
-        speed: 1.91,
-        deg: 238,
-        gust: 4.89,
-      },
+      clouds: { all: 100 },
+      wind: { speed: 1.91, deg: 238, gust: 4.89 },
       visibility: 10000,
       pop: 0.96,
-      rain: {
-        "3h": 3.83,
-      },
-      sys: {
-        pod: "d",
-      },
+      rain: { "3h": 3.83 },
+      sys: { pod: "d" },
       dt_txt: "2021-04-28 06:00:00",
     },
   ],
-  city: {
-    id: 2867714,
-    name: "Munich",
-    coord: {
-      lat: 48.1374,
-      lon: 11.5755,
-    },
-    country: "DE",
-    population: 1260391,
-    timezone: 7200,
-    sunrise: 1619150929,
-    sunset: 1619201690,
-  },
-};
-
-export const listSingle = {
-  cod: "200",
-  message: 0,
-  cnt: 40,
-  list: [
-    {
-      dt: 1619168400,
-      main: {
-        temp: 282.82,
-        feels_like: 282.82,
-        temp_min: 282.82,
-        temp_max: 283.78,
-        pressure: 1029,
-        sea_level: 1029,
-        grnd_level: 964,
-        humidity: 46,
-        temp_kf: -0.96,
-      },
-      weather: [
-        {
-          id: 800,
-          main: "Clear",
-          description: "clear sky",
-          icon: "01d",
-        },
-      ],
-      clouds: {
-        all: 0,
-      },
-      wind: {
-        speed: 1.25,
-        deg: 3,
-        gust: 1.34,
-      },
-      visibility: 10000,
-      pop: 0,
-      sys: {
-        pod: "d",
-      },
-      dt_txt: "2021-04-23 09:00:00",
-    },
-  ],
-  city: {
-    id: 2867714,
-    name: "Munich",
-    coord: {
-      lat: 48.1374,
-      lon: 11.5755,
-    },
-    country: "DE",
-    population: 1260391,
-    timezone: 7200,
-    sunrise: 1619150929,
-    sunset: 1619201690,
-  },
-};
+];

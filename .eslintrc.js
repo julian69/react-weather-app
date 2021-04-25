@@ -26,6 +26,9 @@ module.exports = {
     project: './tsconfig.json',
   },
   rules: {
+    "react/prop-types": 0,
+    "no-non-null-assertion": 0,
+    '@typescript-eslint/no-non-null-assertion': 'off',
     'linebreak-style': 'off',
     'prettier/prettier': [
       'error',

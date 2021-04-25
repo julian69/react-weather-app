@@ -1,3 +1,3 @@
-import { useAppSelector, useAppDispatch } from "./useReduxHooks";
+import useWeather from "./useWeather";
 
-export { useAppSelector, useAppDispatch };
+export default { useWeather };

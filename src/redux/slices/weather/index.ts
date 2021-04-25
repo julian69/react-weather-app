@@ -1,5 +1,5 @@
 import { StatusType } from "./constants";
-import { fetchWeather } from "./slice";
+import { fetchWeather, setActiveCard } from "./slice";
 
-export { StatusType, fetchWeather };
+export { StatusType, fetchWeather, setActiveCard };
 export { default as weatherSlice } from "./slice";

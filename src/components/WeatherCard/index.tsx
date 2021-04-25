@@ -46,7 +46,7 @@ const WeatherCard: React.FC<Props> = ({ data }) => {
 
           <Avatar
             alt="Weather"
-            src={`http://openweathermap.org/img/wn/${weather[0]?.icon}@2x.png`}
+            src={`https://openweathermap.org/img/wn/${weather[0]?.icon}@2x.png`}
           />
         </CardContent>
       </CardActionArea>

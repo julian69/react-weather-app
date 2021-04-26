@@ -24,6 +24,7 @@ export const weatherSlice = createSlice({
     builder.addCase(fetchWeather.fulfilled, (state, action) => {
       const weatherByDays = getWeatherByDays(action.payload?.list);
 
+      state.activeCard = action.payload?.list[0];
       state.city = action.payload?.city.name;
       state.weatherByDays = weatherByDays;
       state.status = StatusType.FULFILLED;

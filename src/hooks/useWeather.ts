@@ -2,6 +2,7 @@ import { fetchWeather, setActiveCard } from "redux/slices/weather";
 import { getWeatherItemsPerSlide } from "utils/helpers";
 import { useAppSelector, useAppDispatch } from "hooks/useReduxHooks";
 import { List } from "utils/interfaces/IWeather";
+import { getBarChartData } from "../utils/helpers";
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const useWeather = () => {
@@ -15,6 +16,7 @@ const useWeather = () => {
     getWeather: () => dispatch(fetchWeather()),
     weatherItemsPerSlide: getWeatherItemsPerSlide(weather.weatherByDays),
     setActiveCard: (activeCard: List) => dispatch(setActiveCard(activeCard)),
+    barChartData: getBarChartData(weather.weatherByDays, weather.activeCard!),
   };
 };
 

@@ -24,7 +24,7 @@ describe("Weather slice", () => {
     expect(state).toEqual({
       weatherByDays,
       status: StatusType.FULFILLED,
-      activeCard: null,
+      activeCard: listSingle.list[0],
       city: "Munich",
     });
   });

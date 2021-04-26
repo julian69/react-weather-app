@@ -1,13 +1,15 @@
 import { uniq, chunk } from "lodash";
 import dayjs from "dayjs";
-import { List } from "./interfaces/IWeather";
+import { List, IBarChart } from "./interfaces/IWeather";
+
+export const getDay = (date: string): string => dayjs(date).format("DD");
 
 export const getWeatherListDays = (list: List[]): string[] =>
-  uniq(list?.map((item) => dayjs(item.dt_txt!).format("DD")));
+  uniq(list?.map((item) => getDay(item.dt_txt!)));
 
 export const groupWeatherByDays = (days: string[], list: List[]): List[][] =>
   days.map((day: string) =>
-    list?.filter((item) => dayjs(item.dt_txt!).format("DD") === day)
+    list?.filter((item) => getDay(item.dt_txt!) === day)
   );
 
 export const getWeatherItemsPerSlide = (weatherByDays: List[][]): List[][] =>
@@ -21,4 +23,15 @@ export const getWeatherByDays = (list: List[]): List[][] => {
 };
 
 export const convertKelvinToCelsius = (kelvin: number): number =>
-  Math.round((kelvin - 273.15) * 100) / 100;
+  Math.round(kelvin - 273.15);
+
+export const getBarChartData = (
+  weatherByDays: List[][],
+  activeCard: List
+): IBarChart[] =>
+  weatherByDays
+    .filter((day) => day.includes(activeCard!))[0]
+    ?.map((list) => ({
+      temp: convertKelvinToCelsius(list.main.temp),
+      time: dayjs.unix(list.dt).format("hh:mm a"),
+    }));

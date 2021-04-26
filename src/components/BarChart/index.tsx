@@ -1,5 +1,7 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
+import { Animation } from "@devexpress/dx-react-chart";
+import useWeather from "hooks/useWeather";
 import {
   Chart,
   BarSeries,
@@ -7,28 +9,23 @@ import {
   ArgumentAxis,
   ValueAxis,
 } from "@devexpress/dx-react-chart-material-ui";
-import { Animation } from "@devexpress/dx-react-chart";
 
-const data = [
-  { year: "1950", population: 2.525 },
-  { year: "1960", population: 3.018 },
-  { year: "1970", population: 3.682 },
-  { year: "1980", population: 4.44 },
-  { year: "1990", population: 5.31 },
-  { year: "2000", population: 6.127 },
-  { year: "2010", population: 6.93 },
-];
+const BarChart: React.FC = () => {
+  const { barChartData } = useWeather();
+  const hasManyBars = barChartData?.length > 1;
+  const barWidth = hasManyBars ? 1 : 0.1;
 
-const BarChart: React.FC = () => (
-  <Paper>
-    <Chart data={data}>
-      <ArgumentAxis />
-      <ValueAxis />
-      <BarSeries valueField="population" argumentField="year" />
-      <Title text="World population" />
-      <Animation />
-    </Chart>
-  </Paper>
-);
+  return (
+    <Paper>
+      <Chart data={barChartData}>
+        <ArgumentAxis />
+        <ValueAxis />
+        <BarSeries valueField="temp" argumentField="time" barWidth={barWidth} />
+        <Title text="Rest of the day" />
+        <Animation />
+      </Chart>
+    </Paper>
+  );
+};
 
 export default BarChart;

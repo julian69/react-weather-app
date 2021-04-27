@@ -3,10 +3,11 @@ import fetchWeatherData from "utils/api/weather";
 import { getWeatherByDays } from "utils/helpers";
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import { List } from "utils/interfaces/IWeather";
-import { initialState, StatusType } from "./constants";
+import { initialState, StatusType, UnitType } from "./constants";
 
-export const fetchWeather = createAsyncThunk("weather/fetchWeather", async () =>
-  fetchWeatherData()
+export const fetchWeather = createAsyncThunk(
+  "weather/fetchWeather",
+  async (city?: string) => fetchWeatherData(city)
 );
 
 export const weatherSlice = createSlice({
@@ -15,6 +16,12 @@ export const weatherSlice = createSlice({
   reducers: {
     setActiveCard: (state, action: PayloadAction<List>) => {
       state.activeCard = action.payload;
+    },
+    setActiveUnit: (state, action: PayloadAction<UnitType>) => {
+      state.activeUnit = action.payload;
+    },
+    setCity: (state, action: PayloadAction<string>) => {
+      state.city = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -37,5 +44,5 @@ export const weatherSlice = createSlice({
   },
 });
 
-export const { setActiveCard } = weatherSlice.actions;
+export const { setActiveCard, setActiveUnit, setCity } = weatherSlice.actions;
 export default weatherSlice.reducer;

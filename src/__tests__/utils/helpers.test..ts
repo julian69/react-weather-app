@@ -4,12 +4,16 @@ import {
   groupWeatherByDays,
   convertKelvinToCelsius,
   getWeatherItemsPerSlide,
+  buildWeatherUrl,
+  convertTemperature,
+  convertKelvinToFahrenheit,
 } from "utils/helpers";
 import { listFull } from "utils/mocks/weather";
 import weatherGroupByDays from "utils/mocks/weatherGroupByDays";
 import weatherGroupPerSlide from "utils/mocks/weatherGroupPerSlide";
-import { listSingle } from "../utils/mocks/weather";
-import { getBarChartData, getDay } from "../utils/helpers";
+import { UnitType } from "redux/slices/weather";
+import { listSingle } from "../../utils/mocks/weather";
+import { getBarChartData, getDay } from "../../utils/helpers";
 
 const days = ["23", "24", "25", "26", "27", "28"];
 
@@ -44,11 +48,32 @@ describe("helpers", () => {
     expect(result).toEqual(6);
   });
 
+  it("should convert value from kelvin to Fahrenheit", () => {
+    const result = convertKelvinToFahrenheit(279.46);
+    expect(result).toEqual(42.8);
+  });
+
+  it("should convert temperature to the given type", () => {
+    const result = convertTemperature(UnitType.CELSIUS, 279.46);
+    expect(result).toEqual(6);
+
+    const result2 = convertTemperature(UnitType.FAHRENHEIT, 279.46);
+    expect(result2).toEqual(42.8);
+  });
+
   it("should return bar chart data", () => {
     const result = getBarChartData(
+      UnitType.CELSIUS,
       getWeatherByDays(listSingle.list),
       listSingle.list[0]
     );
-    expect(result).toEqual([{ temp: 10, time: "11:00 am" }]);
+    expect(result).toEqual([{ temp: 10, time: "11 am" }]);
+  });
+
+  it("should build the weather URL", () => {
+    const result = buildWeatherUrl("Munich");
+    expect(result).toEqual(
+      "https://api.openweathermap.org/data/2.5/forecast?q=Munich,de&APPID=75f972b80e26f14fe6c920aa6a85ad57&cnt=40"
+    );
   });
 });

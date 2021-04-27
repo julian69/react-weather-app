@@ -12,8 +12,7 @@ import {
 
 const BarChart: React.FC = () => {
   const { barChartData } = useWeather();
-  const hasManyBars = barChartData?.length > 1;
-  const barWidth = hasManyBars ? 1 : 0.1;
+  const barWidth = barChartData?.length <= 3 ? 0.2 : 1;
 
   return (
     <Paper>

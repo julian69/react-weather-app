@@ -10,13 +10,14 @@ interface Props {
 const Slide: React.FC<Props> = ({ slide }) => {
   return (
     <Box
+      data-testid="slide"
       display="flex"
       height="100%"
       alignItems="center"
       justifyContent="space-between"
     >
       {slide.map((card) => (
-        <WeatherCard data={card} />
+        <WeatherCard data={card} key={card.dt} />
       ))}
     </Box>
   );

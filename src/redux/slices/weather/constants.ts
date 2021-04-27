@@ -6,16 +6,23 @@ export enum StatusType {
   FULFILLED = "fulfilled",
 }
 
+export enum UnitType {
+  CELSIUS = "C",
+  FAHRENHEIT = "F",
+}
+
 export interface WeatherState {
-  status: StatusType;
   city: string;
+  status: StatusType;
+  activeUnit: UnitType;
   activeCard: List | null;
   weatherByDays: List[][];
 }
 
 export const initialState: WeatherState = {
-  status: StatusType.PENDING,
   city: "",
   activeCard: null,
   weatherByDays: [],
+  status: StatusType.PENDING,
+  activeUnit: UnitType.CELSIUS,
 };

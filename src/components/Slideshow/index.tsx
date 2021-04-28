@@ -2,34 +2,38 @@ import React from "react";
 import Slide from "components/Slide";
 import useWeather from "hooks/useWeather";
 import Carousel from "react-material-ui-carousel";
+import cn from "classnames";
+import useStyles from "./styles";
 
 interface Props {
   className?: string;
 }
 
 const Slideshow: React.FC<Props> = ({ className }) => {
+  const classes = useStyles();
   const { weatherItemsPerSlide } = useWeather();
 
   return (
     <Carousel
-      className={className}
+      className={cn(className, classes.carousel)}
       autoPlay={false}
       animation="slide"
       indicators={false}
       cycleNavigation={false}
       navButtonsAlwaysVisible
-      next={(next: string, active: string) =>
-        // eslint-disable-next-line no-console
-        console.log(`we left ${active}, and are now at ${next}`)
-      }
-      prev={(prev: string, active: string) =>
-        // eslint-disable-next-line no-console
-        console.log(`we left ${active}, and are now at ${prev}`)
-      }
+      navButtonsWrapperProps={{
+        className: "buttons-wrapper",
+        style: {
+          margin: "auto -10px",
+        },
+      }}
     >
-      {weatherItemsPerSlide.map((slide, index) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <Slide key={index} slide={slide} />
+      {weatherItemsPerSlide.map((slide) => (
+        <Slide
+          key={slide[0].dt}
+          slide={slide}
+          shouldCenterContent={slide.length < 3}
+        />
       ))}
     </Carousel>
   );

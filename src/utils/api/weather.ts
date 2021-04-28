@@ -1,8 +1,6 @@
 import { RootWeatherObject } from "utils/interfaces/IWeather";
 import { buildWeatherUrl } from "utils/helpers";
 
-export const WEATHER_API: string = process.env.REACT_APP_WEATHER_API || "";
-
 const fetchWeatherData = async (city?: string): Promise<RootWeatherObject> => {
   try {
     const url = buildWeatherUrl(city);

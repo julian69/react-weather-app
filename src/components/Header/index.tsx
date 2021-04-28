@@ -7,11 +7,14 @@ import Typography from "@material-ui/core/Typography";
 import useWeather from "hooks/useWeather";
 import { UnitType } from "redux/slices/weather";
 import Degree from "components/Degree";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import breakPoint from "utils/constants/breakPoint";
 import useStyles from "./styles";
 
 const Header: React.FC = () => {
   const classes = useStyles();
   const { setActiveUnit, activeUnit } = useWeather();
+  const matches = useMediaQuery(breakPoint);
 
   const { CELSIUS, FAHRENHEIT } = UnitType;
   const isCelsius = activeUnit === CELSIUS;
@@ -24,9 +27,9 @@ const Header: React.FC = () => {
   return (
     <div
       className={classes.root}
-      data-testid={isCelsius ? "c-active" : "f-active"}
+      data-testid={!isCelsius ? "c-active" : "f-active"}
     >
-      <AppBar position="static">
+      <AppBar position="static" className={!matches ? classes.mobile : ""}>
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
             Weather App

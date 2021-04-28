@@ -1,9 +1,20 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
+  weatherPage: {
+    padding: "2rem 0",
+  },
+  mobile: {
+    textAlign: "center",
+  },
+  cityPicker: {
+    width: "100%",
+    display: "flex",
+    marginBottom: "0.5rem",
+    justifyContent: "center",
+  },
   slideShow: {
-    padding: "1rem 0",
-    marginBottom: "2rem",
+    marginBottom: "1.5rem",
   },
 });
 

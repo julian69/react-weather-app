@@ -56,7 +56,7 @@ describe("Weather slice", () => {
       status: StatusType.FULFILLED,
       activeCard: listSingle.list[0],
       city: "Munich",
-      activeUnit: UnitType.CELSIUS,
+      activeUnit: UnitType.FAHRENHEIT,
     });
   });
 

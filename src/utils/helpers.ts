@@ -1,7 +1,9 @@
 import { uniq, chunk } from "lodash";
 import dayjs from "dayjs";
 import { UnitType } from "redux/slices/weather";
-import { List, IBarChart } from "./interfaces/IWeather";
+import { WEATHER_API, APP_APPID } from "utils/constants/env";
+import { List } from "./interfaces/IWeather";
+import { IBarChart } from "./interfaces/IBarChart";
 
 export const getDay = (date: string): string => dayjs(date).format("DD");
 
@@ -27,7 +29,7 @@ export const convertKelvinToCelsius = (kelvin: number): number =>
   Math.round(kelvin - 273.15);
 
 export const convertKelvinToFahrenheit = (kelvin: number): number =>
-  (Math.round(kelvin - 273.15) * 9) / 5 + 32;
+  Math.round(((kelvin - 273.15) * 9) / 5 + 32);
 
 export const convertTemperature = (
   unitType: UnitType,
@@ -50,8 +52,6 @@ export const getBarChartData = (
     }));
 
 export const buildWeatherUrl = (city?: string): string => {
-  const APP_APPID: string = process.env.REACT_APP_APPID || "";
-  const WEATHER_API: string = process.env.REACT_APP_WEATHER_API || "";
   const tempCity = city || "Munich";
   // This is a workaround to mock a city selection feature.
   // In a real life scenario we should get a list of cities via API and

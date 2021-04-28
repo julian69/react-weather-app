@@ -7,13 +7,14 @@ import {
   buildWeatherUrl,
   convertTemperature,
   convertKelvinToFahrenheit,
+  getBarChartData,
+  getDay,
 } from "utils/helpers";
-import { listFull } from "utils/mocks/weather";
+import { listFull, listSingle } from "utils/mocks/weather";
 import weatherGroupByDays from "utils/mocks/weatherGroupByDays";
 import weatherGroupPerSlide from "utils/mocks/weatherGroupPerSlide";
 import { UnitType } from "redux/slices/weather";
-import { listSingle } from "../../utils/mocks/weather";
-import { getBarChartData, getDay } from "../../utils/helpers";
+import { WEATHER_API, APP_APPID } from "utils/constants/env";
 
 const days = ["23", "24", "25", "26", "27", "28"];
 
@@ -50,7 +51,7 @@ describe("helpers", () => {
 
   it("should convert value from kelvin to Fahrenheit", () => {
     const result = convertKelvinToFahrenheit(279.46);
-    expect(result).toEqual(42.8);
+    expect(result).toEqual(43);
   });
 
   it("should convert temperature to the given type", () => {
@@ -58,7 +59,7 @@ describe("helpers", () => {
     expect(result).toEqual(6);
 
     const result2 = convertTemperature(UnitType.FAHRENHEIT, 279.46);
-    expect(result2).toEqual(42.8);
+    expect(result2).toEqual(43);
   });
 
   it("should return bar chart data", () => {
@@ -73,7 +74,7 @@ describe("helpers", () => {
   it("should build the weather URL", () => {
     const result = buildWeatherUrl("Munich");
     expect(result).toEqual(
-      "https://api.openweathermap.org/data/2.5/forecast?q=Munich,de&APPID=75f972b80e26f14fe6c920aa6a85ad57&cnt=40"
+      `${WEATHER_API}?q=Munich,de&APPID=${APP_APPID}&cnt=40`
     );
   });
 });

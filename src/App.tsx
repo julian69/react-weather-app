@@ -6,9 +6,11 @@ import React, { useEffect } from "react";
 import Container from "@material-ui/core/Container";
 import { StatusType } from "redux/slices/weather";
 import useWeather from "hooks/useWeather";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const App: React.FC = () => {
   const { status, getWeather } = useWeather();
+  const matches = useMediaQuery("(min-width:769px)");
 
   useEffect(() => {
     getWeather();
@@ -28,7 +30,7 @@ const App: React.FC = () => {
   return (
     <>
       <Header />
-      <Container className="App" fixed>
+      <Container className="App" fixed style={{ paddingTop: matches ? 0 : 50 }}>
         {renderContent()}
       </Container>
     </>

@@ -71,8 +71,3 @@ export interface RootWeatherObject {
   list: List[];
   city: City;
 }
-
-export interface IBarChart {
-  temp: number;
-  time: string;
-}

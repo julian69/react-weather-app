@@ -11,18 +11,18 @@ export enum UnitType {
   FAHRENHEIT = "F",
 }
 
-export interface WeatherState {
+export type WeatherState = {
   city: string;
   status: StatusType;
   activeUnit: UnitType;
   activeCard: List | null;
   weatherByDays: List[][];
-}
+};
 
 export const initialState: WeatherState = {
   city: "",
   activeCard: null,
   weatherByDays: [],
   status: StatusType.PENDING,
-  activeUnit: UnitType.CELSIUS,
+  activeUnit: UnitType.FAHRENHEIT,
 };

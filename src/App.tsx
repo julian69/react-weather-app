@@ -22,7 +22,7 @@ const App: React.FC = () => {
 
     if (status === PENDING) return <Load />;
     if (status === FULFILLED) return <Weather />;
-    // if (status === REJECTED) return <NotFound />;
+    if (status === REJECTED) return <NotFound />;
 
     return <></>;
   };

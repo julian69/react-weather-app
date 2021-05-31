@@ -1,6 +1,6 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
-import { Animation } from "@devexpress/dx-react-chart";
+import { Animation, EventTracker } from "@devexpress/dx-react-chart";
 import useWeather from "hooks/useWeather";
 import {
   Chart,
@@ -8,6 +8,7 @@ import {
   Title,
   ArgumentAxis,
   ValueAxis,
+  Tooltip,
 } from "@devexpress/dx-react-chart-material-ui";
 import indigo from "@material-ui/core/colors/indigo";
 
@@ -27,6 +28,8 @@ const BarChart: React.FC = () => {
           color={indigo[500]}
         />
         <Title text="Rest of the day" />
+        <EventTracker />
+        <Tooltip />
         <Animation />
       </Chart>
     </Paper>

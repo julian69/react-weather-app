@@ -7,7 +7,10 @@ import { initialState, StatusType, UnitType } from "./constants";
 
 export const fetchWeather = createAsyncThunk(
   "weather/fetchWeather",
-  async (city?: string) => fetchWeatherData(city)
+  async (city?: string) => {
+    const response = await fetchWeatherData(city).then((data: any) => data);
+    return response;
+  }
 );
 
 export const weatherSlice = createSlice({

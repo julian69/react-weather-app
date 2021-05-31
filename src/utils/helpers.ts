@@ -19,7 +19,7 @@ export const getWeatherItemsPerSlide = (
   amount: number,
   weatherByDays: List[][]
 ): List[][] =>
-  chunk(weatherByDays, amount).map((itemsPerSlide) =>
+  chunk(weatherByDays, 3).map((itemsPerSlide) =>
     itemsPerSlide.map((item) => item[0])
   );
 

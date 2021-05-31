@@ -9,7 +9,7 @@ import useStyles from "./styles";
 
 const Weather: React.FC = () => {
   const classes = useStyles();
-  const matches = useMediaQuery(breakPoint);
+  const matches = useMediaQuery(breakPoint.medium);
 
   return (
     <section

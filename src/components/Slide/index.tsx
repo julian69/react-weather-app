@@ -13,7 +13,7 @@ interface Props {
 
 const Slide: React.FC<Props> = ({ slide, shouldCenterContent }) => {
   const classes = useStyles();
-  const matches = useMediaQuery(breakPoint);
+  const matches = useMediaQuery(breakPoint.medium);
 
   return (
     <Box

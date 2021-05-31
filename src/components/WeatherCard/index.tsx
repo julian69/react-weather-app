@@ -25,7 +25,7 @@ interface Props {
 
 const WeatherCard: React.FC<Props> = ({ data, className }) => {
   const classes = useStyles();
-  const matches = useMediaQuery(breakPoint);
+  const matches = useMediaQuery(breakPoint.medium);
   const { setActiveCard, activeCard, activeUnit } = useWeather();
 
   const { main, weather, dt, wind, rain } = data;

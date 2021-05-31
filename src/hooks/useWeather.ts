@@ -20,7 +20,8 @@ const useWeather = () => {
     activeUnit: weather.activeUnit,
     activeCard: weather.activeCard,
     getWeather: () => dispatch(fetchWeather()),
-    weatherItemsPerSlide: getWeatherItemsPerSlide(weather.weatherByDays),
+    weatherItemsPerSlide: (amount: number) =>
+      getWeatherItemsPerSlide(amount, weather.weatherByDays),
     setActiveCard: (activeCard: List) => dispatch(setActiveCard(activeCard)),
     setCity: (city: string) => {
       dispatch(setCity(city));

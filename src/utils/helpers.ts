@@ -15,8 +15,11 @@ export const groupWeatherByDays = (days: string[], list: List[]): List[][] =>
     list?.filter((item) => getDay(item.dt_txt!) === day)
   );
 
-export const getWeatherItemsPerSlide = (weatherByDays: List[][]): List[][] =>
-  chunk(weatherByDays, 3).map((itemsPerSlide) =>
+export const getWeatherItemsPerSlide = (
+  amount: number,
+  weatherByDays: List[][]
+): List[][] =>
+  chunk(weatherByDays, amount).map((itemsPerSlide) =>
     itemsPerSlide.map((item) => item[0])
   );
 

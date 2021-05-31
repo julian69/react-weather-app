@@ -14,7 +14,7 @@ import useStyles from "./styles";
 const Header: React.FC = () => {
   const classes = useStyles();
   const { setActiveUnit, activeUnit } = useWeather();
-  const matches = useMediaQuery(breakPoint);
+  const matches = useMediaQuery(breakPoint.medium);
 
   const { CELSIUS, FAHRENHEIT } = UnitType;
   const isCelsius = activeUnit === CELSIUS;

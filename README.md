@@ -1,6 +1,6 @@
 ## Weather App!
 
-## Description
+### Description
 You will be able to select a city, a temperature unit, and an active day from the carousel. After triggering any of these actions, the whole page will update its content to reflect the selection performed.
 Things to keep in mind:
 - I tried to achieve a decent test coverage, but I would have liked to do some more integration test had I had the time.

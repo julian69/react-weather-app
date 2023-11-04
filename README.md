@@ -6,10 +6,10 @@ Things to keep in mind:
 - I tried to achieve a decent test coverage, but I would have liked to do some more integration test had I had the time.
 - If this were a "production" app, I would have thoroughly worked on the design. I did my best using the default styles.
 
-## Live Preview
+### Live Preview
 [Demo](https://julian69.github.io/react-weather-app/)
 
-## Stack
+### Stack
 - React
 - TypeScript
 - Redux/Redux Toolkit
@@ -17,7 +17,7 @@ Things to keep in mind:
 - React testing library
 - Github Actions & Pages
 
-## Scripts
+### Scripts
 Run development server
 
 ```bash
@@ -58,5 +58,5 @@ $ yarn deploy
 $ npm run deploy
 ```
 
-## Preview
+### Preview
 ![image](https://user-images.githubusercontent.com/6019858/116482618-ca1dcf00-a885-11eb-9f81-062bad85001a.png)

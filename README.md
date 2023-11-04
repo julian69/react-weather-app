@@ -1,13 +1,10 @@
 # Weather App!
 
-Hi!
-First of all, I'd like to thank you for this opportunity. I enjoyed working on this project and hope it meets your expectations.
-
 ## Description
-The weather app is a basic implementation that follows the requirements described in the task. You will be able to select a city, a temperature unit, and an active day from the carousel. After triggering any of these actions, the whole page will update its content to reflect the selection performed.
+You will be able to select a city, a temperature unit, and an active day from the carousel. After triggering any of these actions, the whole page will update its content to reflect the selection performed.
 Things to keep in mind:
 - I tried to achieve a decent test coverage, but I would have liked to do some more integration test had I had the time.
-- If this were a "production" app, I would have thoroughly worked on the design. Being this a test, I did my best using the default styles. (I didn't have previous experience with Material UI, I hope it is good enough :))
+- If this were a "production" app, I would have thoroughly worked on the design. I did my best using the default styles.
 
 ## Live Preview
 [Demo](https://julian69.github.io/react-weather-app/)
